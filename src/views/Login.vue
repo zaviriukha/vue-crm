@@ -7,19 +7,32 @@
                         id="email"
                         type="text"
                         v-model.trim="email"
-                        :class="{}"
+                        :class="{invalid: ($v.email.$dirty && !$v.email.required) || ($v.email.$dirty && !$v.email.email)}"
                 >
                 <label for="email">Email</label>
-                <small class="helper-text invalid">Email</small>
+                <small
+                        v-if="$v.email.$dirty && !$v.email.required"
+                        class="helper-text invalid"
+                >Поле email не должно быть пустым</small>
+                <small
+                        v-else-if="$v.email.$dirty && !$v.email.email"
+                        class="helper-text invalid"
+                >Введите коректный email</small>
             </div>
             <div class="input-field">
                 <input
                         id="password"
                         type="password"
-                        v-model="password"
+                        v-model.trim="password"
+                        :class="{invalid: ($v.password.$dirty && !$v.password.required) || ($v.password.$dirty && !$v.password.minLength)}"
                 >
                 <label for="password">Пароль</label>
-                <small class="helper-text invalid">Password</small>
+                <small class="helper-text invalid"
+                       v-if="$v.password.$dirty && !$v.password.required"
+                >Введите пароль</small>
+                <small class="helper-text invalid"
+                       v-else-if="$v.password.$dirty && !$v.password.minLength"
+                >Пароль должен быть {{$v.password.$params.minLength.min}} символов. Сейчас он {{password.length}}</small>
             </div>
         </div>
         <div class="card-action">
@@ -59,6 +72,15 @@
         },
         methods: {
             submitHandler() {
+                if(this.$v.$invalid) {
+                    this.$v.$touch()
+                    return
+                }
+                const formData = {
+                    email: this.email,
+                    password: this.password
+                }
+
                 this.$router.push('/')
             }
         },
