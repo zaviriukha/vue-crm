@@ -32,7 +32,8 @@
                 >Введите пароль</small>
                 <small class="helper-text invalid"
                        v-else-if="$v.password.$dirty && !$v.password.minLength"
-                >Пароль должен быть {{$v.password.$params.minLength.min}} символов. Сейчас он {{password.length}}</small>
+                >Пароль должен быть {{$v.password.$params.minLength.min}} символов. Сейчас он
+                    {{password.length}}</small>
             </div>
         </div>
         <div class="card-action">
@@ -63,7 +64,7 @@
             email: '',
             password: ''
         }),
-        validations:{
+        validations: {
             email: {
                 email, required
             },
@@ -73,7 +74,7 @@
         },
         methods: {
             submitHandler() {
-                if(this.$v.$invalid) {
+                if (this.$v.$invalid) {
                     this.$v.$touch()
                     return
                 }
