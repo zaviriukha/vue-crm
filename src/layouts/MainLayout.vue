@@ -25,8 +25,16 @@
         name: "MainLayout",
         components: {Sidebar, Navbar},
         data: () => ({
-            isOpen: true
-        })
+            isOpen: true,
+            loading: true
+        }),
+        async mounted() {
+            if (!Object.keys(this.$store.getters.info).length) {
+                await this.$store.dispatch('fetchInfo')
+            }
+
+            this.loading = false
+        },
     }
 </script>
 
