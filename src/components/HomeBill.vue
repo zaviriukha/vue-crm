@@ -7,7 +7,9 @@
                 <p      v-for="cur of currencies"
                         :key="cur"
                         class="currency-line">
-                    <span>{{getCurrency(cur)}}</span>
+                    <span>
+                        {{ getCurrency(cur) | currency(cur) }}
+                    </span>
                 </p>
             </div>
         </div>
@@ -20,6 +22,7 @@
         props: ['rates'],
         data: () => ({
            currencies: ['UAH', 'EUR', 'USD']
+
         }),
         computed: {
             base() {
