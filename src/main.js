@@ -12,6 +12,7 @@ import Loader from "./components/app/Loader"
 import './registerServiceWorker'
 import 'materialize-css/dist/js/materialize.min'
 import Paginate from 'vuejs-paginate'
+import VueMeta from 'vue-meta'
 
 import firebase from 'firebase/app'
 import 'firebase/auth'
@@ -21,6 +22,7 @@ Vue.config.productionTip = false
 
 Vue.use(Vuelidate)
 Vue.use(messagePlugin)
+Vue.use(VueMeta)
 Vue.filter('date', dateFilter)
 Vue.filter('currency', currencyFilter)
 Vue.filter('localize', localizeFilter)

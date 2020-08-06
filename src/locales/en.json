@@ -4,5 +4,14 @@
   "Menu_History": "History",
   "Menu_Planning": "Planning",
   "Menu_NewRecord": "New Record",
-  "Menu_Categories": "Categories"
+  "Menu_Categories": "Categories",
+  "User_Name": "Name",
+  "Enter_Name": "Enter name",
+  "Refresh": "Refresh",
+  "No_Categories": "There are no categories yet",
+  "Create_Category" : "Create",
+  "Title_Category" : "Category Title",
+  "Enter_Title" : "Enter the title",
+  "Limit" : "Limit",
+  "Minimum_Value" : "Minimum Value"
 }

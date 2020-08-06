@@ -4,5 +4,14 @@
   "Menu_History": "Історія",
   "Menu_Planning": "Планування",
   "Menu_NewRecord": "Новий запис",
-  "Menu_Categories": "Категорії"
+  "Menu_Categories": "Категорії",
+  "User_Name": "Ім'я",
+  "Enter_Name": "Введіть ім'я",
+  "Refresh": "Оновити",
+  "No_Categories": "Категорій поки немає",
+  "Create_Category" : "Додайте",
+  "Title_Category" : "Назва категорії",
+  "Enter_Title" : "Введіть назву",
+  "Limit" : "Ліміт",
+  "Minimum_Value" : "Мінімальна величина"
 }

@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="page-title">
-            <h3>Категории</h3>
+            <h3>{{'Menu_Categories' | localize}}</h3>
         </div>
         <section>
             <Loader v-if="loading" />
@@ -13,7 +13,7 @@
                         :key="categories.length + updateCount"
                         @updated="updateCategories"
                 />
-                <p v-else class="center">Категорий пока нет</p>
+                <p v-else class="center">{{'No_Categories' | localize}}</p>
             </div>
         </section>
     </div>
@@ -23,6 +23,7 @@
     import CategoryCreate from "../components/CategoryCreate";
     import CategoryEdit from "../components/CategoryEdit";
     import category from "../store/category";
+    import localizeFilter from "../filters/localize.filter";
 
     export default {
         name: "Categories",

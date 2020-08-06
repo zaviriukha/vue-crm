@@ -12,11 +12,11 @@
                         v-model="name"
                         :class="{invalid: $v.name.$dirty && !$v.name.required}"
                 >
-                <label for="description">Имя</label>
+                <label for="description">{{'User_Name' | localize}}</label>
                 <small
                         class="helper-text invalid"
                         v-if="$v.name.$dirty && !$v.name.required"
-                >Введите имя</small>
+                >{{'Enter_Name' | localize}}</small>
             </div>
 
             <div class="switch">
@@ -29,7 +29,7 @@
             </div>
 
             <button class="btn waves-effect waves-light" type="submit">
-                Обновить
+                {{'Refresh' | localize}}
                 <i class="material-icons right">send</i>
             </button>
         </form>
@@ -39,8 +39,14 @@
 <script>
     import {mapGetters, mapActions} from 'vuex'
     import {required} from "vuelidate/lib/validators";
+    import localizeFilter from "../filters/localize.filter";
 
     export default {
+        metaInfo() {
+            return {
+                title: localizeFilter('ProfileTitle'),
+            }
+        } ,
         name: "Profile",
         mounted() {
             this.name = this.info.name
