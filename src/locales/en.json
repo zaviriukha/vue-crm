@@ -13,5 +13,8 @@
   "Title_Category" : "Category Title",
   "Enter_Title" : "Enter the title",
   "Limit" : "Limit",
-  "Minimum_Value" : "Minimum Value"
+  "Minimum_Value" : "Minimum Value",
+  "Create" : "Створити",
+  "Edit_Category" : "Edit Category",
+  "Select_category" : "Edit Category"
 }

@@ -13,5 +13,8 @@
   "Title_Category" : "Назва категорії",
   "Enter_Title" : "Введіть назву",
   "Limit" : "Ліміт",
-  "Minimum_Value" : "Мінімальна величина"
+  "Minimum_Value" : "Мінімальна величина",
+  "Create" : "Створити",
+  "Edit_Category" : "Редагувати",
+  "Select_category" : "Обрати категорію"
 }

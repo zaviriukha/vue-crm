@@ -2,7 +2,7 @@
     <div class="col s12 m6">
         <div>
             <div class="page-subtitle">
-                <h4>Редактировать</h4>
+                <h4>{{'Edit_Category' | localize}}</h4>
             </div>
 
             <form @submit.prevent="submitHandler">
@@ -15,7 +15,7 @@
                         >{{c.title}}
                         </option>
                     </select>
-                    <label>Выберите категорию</label>
+                    <label>{{'Select_category' | localize}}</label>
                 </div>
 
                 <div class="input-field">

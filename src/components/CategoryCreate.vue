@@ -33,7 +33,7 @@
                 </div>
 
                 <button class="btn waves-effect waves-light" type="submit">
-                    Создать
+                  {{'Create' | localize}}
                     <i class="material-icons right">send</i>
                 </button>
             </form>
