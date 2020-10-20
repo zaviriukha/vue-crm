@@ -1,4 +1,4 @@
-# crm-practice
+# bookkeeping-crm
 CRM system for home bookkeeping. Created with JS and Vue.js
 
 ## Project setup
