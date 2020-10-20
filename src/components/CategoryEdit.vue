@@ -25,10 +25,10 @@
                             v-model="title"
                             :class="{invalid: $v.title.$dirty && !$v.title.required}"
                     >
-                    <label for="name">Название</label>
+                    <label for="name">{{'Name_Category' | localize}}</label>
                     <span class="helper-text invalid"
                           v-if="$v.title.$dirty && !$v.title.required"
-                    >Введите название</span>
+                    >{{'Enter_name' | localize}} Введите название</span>
                 </div>
 
                 <div class="input-field">
@@ -38,14 +38,14 @@
                             v-model.number="limit"
                             :class="{invalid: $v.limit.$dirty && !$v.limit.minValue}"
                     >
-                    <label for="limit">Лимит</label>
+                    <label for="limit">{{'Limit' | localize}}</label>
                     <span class="helper-text invalid"
                           v-if="$v.limit.$dirty && !$v.limit.minValue"
-                    >Минимальная величина {{$v.limit.$params.minValue.min}}</span>
+                    >{{'Minimum_Value' | localize}} {{$v.limit.$params.minValue.min}}</span>
                 </div>
 
                 <button class="btn waves-effect waves-light" type="submit">
-                    Обновить
+                  {{'Refresh' | localize}}
                     <i class="material-icons right">send</i>
                 </button>
             </form>

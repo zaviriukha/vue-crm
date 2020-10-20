@@ -16,5 +16,15 @@
   "Minimum_Value" : "Мінімальна величина",
   "Create" : "Створити",
   "Edit_Category" : "Редагувати",
-  "Select_category" : "Обрати категорію"
+  "Select_category" : "Обрати категорію",
+  "Name_Category" : "Назва категорії",
+  "Enter_name" : "Введіть назву",
+  "Amount" : "Сума",
+  "Date" : "Дата",
+  "Category" : "Категорія",
+  "Type" : "Тип",
+  "Open" : "Відкрити",
+  "Currency_Account" : "Рахунок у валюті",
+  "Exchange_Rates" : "Курс валют"
+
 }

@@ -16,5 +16,14 @@
   "Minimum_Value" : "Minimum Value",
   "Create" : "Створити",
   "Edit_Category" : "Edit Category",
-  "Select_category" : "Edit Category"
+  "Select_category" : "Edit Category",
+  "Name_Category" : "Category Name",
+  "Enter_name" : "Enter name",
+  "Amount" : "Amount",
+  "Date" : "Date",
+  "Category" : "Category",
+  "Type" : "Type",
+  "Open" : "Open",
+  "Currency_Account" : "Currency Account",
+  "Exchange_Rates" : "Exchange Rates"
 }
