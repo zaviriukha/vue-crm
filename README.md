@@ -1,4 +1,5 @@
 # crm-practice
+CRM system for home bookkeeping. Created with JS and Vue.js
 
 ## Project setup
 ```
@@ -7,13 +8,10 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+vue-cli-service serve
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+vue-cli-service build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
